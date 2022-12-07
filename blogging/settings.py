@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     # my apps
     'home',
+    # 3rd party
+    'django_editorjs_fields',
 ]
 
 MIDDLEWARE = [

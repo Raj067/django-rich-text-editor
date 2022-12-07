@@ -4,6 +4,7 @@ from .models import Blog
 
 
 def blog(request, *args, **kwargs):
+    b = Blog.objects.all()
     if request.method == 'POST':
         print(request.POST)
-    return render(request, 'blog.html', {})
+    return render(request, 'blog.html', {"blog": b})
